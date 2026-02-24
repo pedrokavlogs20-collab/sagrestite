@@ -28,7 +28,10 @@
     }
     .nav-logo {
       font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.3rem;
-      letter-spacing: -0.05em; display: flex; align-items: center; gap: 7px;
+      letter-spacing: -0.05em; display: flex; align-items: center; gap: 10px;
+    }
+    .nav-logo img {
+      width: 32px; height: 32px; border-radius: 8px; object-fit: cover;
     }
     .nav-dot {
       width: 8px; height: 8px; background: var(--grad); border-radius: 50%;
@@ -342,14 +345,14 @@
 <body>
 
 <nav>
-  <div class="nav-logo"><div class="nav-dot"></div>SAGRES</div>
+  <div class="nav-logo"><img src="data:image/jpeg;base64,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" alt="Logo" style="width:32px;height:32px;border-radius:8px;object-fit:cover;">SAGRES</div>
   <div class="nav-links">
     <a href="#produtos">Produtos</a>
     <a href="#porque">Por que Sagres?</a>
     <a href="#clientes">Clientes</a>
     <a href="#sobre">Sobre</a>
     <a href="#contato">Contato</a>
-    <a href="tel:4333388099" class="nav-phone">📞 43 3338-8099</a>
+    <a href="https://wa.me/554333388099" target="_blank" rel="noopener" class="nav-phone">📞 43 3338-8099</a>
     <a href="https://sagrescloud.com.br/" class="nav-cta" target="_blank">Área do Usuário →</a>
   </div>
 </nav>
@@ -504,7 +507,7 @@
   <div class="about-inner">
     <div class="aqc">
       <span class="bq">"</span>
-      <p class="aqt"><strong>Sagres Informática</strong> nasceu diante da necessidade do mercado em ter a <strong>solução completa</strong> integrando serviços, hardware e software. Com isso deixamos os nossos clientes tranquilos com a infra-estrutura de tecnologia da sua empresa.<br><br>Trabalhamos também alinhados com a <strong>legislação fiscal vigente</strong> evitando futuros problemas contábeis para nossos clientes. O suporte é composto por colaboradores treinados e atenciosos que estão sempre prontos para solucionar diversas dúvidas e solicitações dos clientes tornando o atendimento mais rápido e eficiente.<br><br>Se você busca uma empresa sólida, com <strong>20 anos de atividades no mercado Nacional</strong>, venha nos fazer uma visita e teremos o maior prazer em atendê-los.<br><br>E se você, profissional de Tecnologia da Informação, tiver interesse em fazer parte de nossa história, <a href="/cdn-cgi/l/email-protection#55273d152634322730263c3b333a273834213c36347b363a387b37276a0620373f30362168162027273c362039203875033c21343075233c3475063c2130" style="color:var(--accent2);text-decoration:underline;font-style:normal;font-weight:600;">trabalhe conosco</a> e venha fazer parte de nossa equipe de colaboradores. Envie-nos seu currículo.</p>
+      <p class="aqt"><strong>Sagres Informática</strong> nasceu diante da necessidade do mercado em ter a <strong>solução completa</strong> integrando serviços, hardware e software. Com isso deixamos os nossos clientes tranquilos com a infra-estrutura de tecnologia da sua empresa.<br><br>Trabalhamos também alinhados com a <strong>legislação fiscal vigente</strong> evitando futuros problemas contábeis para nossos clientes. O suporte é composto por colaboradores treinados e atenciosos que estão sempre prontos para solucionar diversas dúvidas e solicitações dos clientes tornando o atendimento mais rápido e eficiente.<br><br>Se você busca uma empresa sólida, com <strong>20 anos de atividades no mercado Nacional</strong>, venha nos fazer uma visita e teremos o maior prazer em atendê-los.<br><br>E se você, profissional de Tecnologia da Informação, tiver interesse em fazer parte de nossa história, <a href="/cdn-cgi/l/email-protection#20524860534147524553494e464f524d41544943410e434f4d0e4252" style="color:var(--accent2);text-decoration:underline;font-style:normal;font-weight:600;">trabalhe conosco</a> e venha fazer parte de nossa equipe de colaboradores. Envie-nos seu currículo.</p>
       <div class="ametrics">
         <div class="ambox"><div class="amval">+20</div><div class="amlbl">Anos no mercado</div></div>
         <div class="ambox"><div class="amval">+3k</div><div class="amlbl">PDVs instalados</div></div>
@@ -535,11 +538,10 @@
 
       <div class="ccards">
         <div class="cc"><span class="cci">📍</span><div><h4>Endereço</h4><p>Rua João Wyclif, 111 — Sala 208<br>Gleba Fazenda Palhano · Londrina/PR</p></div></div>
-        <div class="cc"><span class="cci">✉️</span><div><h4>E-mail</h4><a href="/cdn-cgi/l/email-protection#bfccded8cddaccffccdacddcd0d2cbdad391dcd0d291ddcd"><span class="__cf_email__" data-cfemail="9ceffdfbeef9efdceff9eefff3f1e8f9f0b2fff3f1b2feee">[email&#160;protected]</span></a></div></div>
-        <div class="cc"><span class="cci">📞</span><div><h4>Telefone Fixo</h4><a href="tel:4333388099">43 3338-8099</a></div></div>
-        <div class="cc"><span class="cci">🌙</span><div><h4>Plantão 24h</h4><a href="tel:43999962360">43 9 9996-2360</a></div></div>
-        <div class="cc"><span class="cci">📱</span><div><h4>Celular</h4><a href="tel:43988173683">43 9 8817-3683</a></div></div>
-        <div class="cc"><span class="cci">💼</span><div><h4>Trabalhe Conosco</h4><a href="/cdn-cgi/l/email-protection#790b11390a181e0b1c0a10171f160b14180d101a18571a1614571b0b462a0c1b131c1a0d443a0c0b0b101a0c150c14592f100d181c590f1018592a100d1c">Envie seu currículo →</a></div></div>
+        <div class="cc"><span class="cci">📞</span><div><h4>Telefone Fixo</h4><a href="https://wa.me/554333388099" target="_blank" rel="noopener">43 3338-8099</a></div></div>
+        <div class="cc"><span class="cci">🌙</span><div><h4>Plantão 24h</h4><a href="https://wa.me/554399962360" target="_blank" rel="noopener">43 9 9996-2360</a></div></div>
+        <div class="cc"><span class="cci">📱</span><div><h4>Celular</h4><a href="https://wa.me/554398817368" target="_blank" rel="noopener">43 9 8817-3683</a></div></div>
+        <div class="cc"><span class="cci">💼</span><div><h4>Trabalhe Conosco</h4><a href="/cdn-cgi/l/email-protection#f3819bb38092948196809a9d959c819e92879a9092dd909c9edd9181">Envie seu currículo →</a></div></div>
       </div>
 
       <div style="margin-top:2rem;">
@@ -554,7 +556,6 @@
   </div>
 </section>
 
-<!-- ══ CLIENTES ══════════════════════════════════ -->
 <section class="s" id="clientes" style="background:var(--bg);border-top:1px solid var(--border);">
   <div style="text-align:center;margin-bottom:3rem;">
     <div class="s-tag" style="justify-content:center;">Clientes</div>
@@ -627,37 +628,54 @@
 <style>
 .logos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: .7rem;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
 }
 .logo-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: .8rem;
+  background: linear-gradient(145deg, #111828, #0d1525);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 24px;
+  padding: 1rem;
   display: flex; align-items: center; justify-content: center;
-  height: 90px;
+  height: 100px;
   overflow: hidden;
-  transition: border-color .2s, transform .2s, background .2s;
+  position: relative;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.logo-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: radial-gradient(circle at 50% 0%, rgba(69,170,255,0.08), transparent 70%);
+  opacity: 0;
+  transition: opacity .3s ease;
 }
 .logo-card:hover {
-  border-color: rgba(26,111,232,0.3);
-  background: #0f1c32;
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.04);
+  border-color: rgba(69,170,255,0.3);
+  box-shadow: 0 12px 40px rgba(26,111,232,0.2), 0 0 0 1px rgba(69,170,255,0.1);
+}
+.logo-card:hover::before {
+  opacity: 1;
 }
 .logo-card img {
-  max-width: 100%; max-height: 100%;
+  max-width: 85%; max-height: 75px;
   object-fit: contain;
-  filter: grayscale(0.3) brightness(0.9);
-  transition: filter .2s;
+  filter: grayscale(0.2) brightness(0.95);
+  transition: filter .3s ease, transform .3s ease;
+  position: relative; z-index: 1;
 }
 .logo-card:hover img {
-  filter: grayscale(0) brightness(1.05);
+  filter: grayscale(0) brightness(1.1);
+  transform: scale(1.05);
 }
 </style>
+
+<footer>
   <div class="foot-inner">
     <div class="fbrand">
-      <div class="nav-logo"><div class="nav-dot"></div>SAGRES</div>
+      <div class="nav-logo"><img src="data:image/jpeg;base64,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" alt="Logo" style="width:32px;height:32px;border-radius:8px;object-fit:cover;">SAGRES</div>
       <p>Automação comercial completa para restaurantes, bares, lanchonetes e franquias. Mais de 20 anos transformando negócios com tecnologia e suporte de excelência.</p>
     </div>
     <div class="fcol">
@@ -670,4 +688,4 @@
       <a href="#sobre">Sobre nós</a>
       <a href="https://sagrescloud.com.br/" target="_blank">Sagres Cloud</a>
       <a href="http://www.pratodigital.com.br" target="_blank">Prato Digital</a>
-      <a href="/cdn-cgi/l/email-protection#394b51794a585e4b5c4a50575f564b54584d505a58175a5654175b4b066a4c5b535c5a4d047a4c4b4b505a4c554c54196f504d585c194f5058196a504d5c">Trabalhe Conosco</a>
+      <a href="/cdn
